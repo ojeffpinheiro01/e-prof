@@ -2,9 +2,9 @@ import React from 'react';
 import { View } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack'
 
-import { RootStackParamList } from '../ui/router/Router'
+import { RootStackParamList } from 'ui/router/Router'
 
-import ButtonStyled from '../ui/components/inputs/Button/Button';
+import ButtonStyled from 'ui/components/inputs/Button/Button';
 
 type NavigationProp = StackNavigationProp<RootStackParamList, 'Index'>;
 

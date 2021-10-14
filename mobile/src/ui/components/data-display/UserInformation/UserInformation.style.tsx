@@ -2,7 +2,7 @@ import { View } from "react-native";
 import { AirbnbRating } from "react-native-ratings";
 import styled, { css } from "@emotion/native";
 
-import AppTheme from "../../../themes/app-theme";
+import AppTheme from "ui/themes/app-theme";
 
 export const UserInformationContainer = styled(View, {
   shouldForwardProp: (prop) => prop !== 'darker',
