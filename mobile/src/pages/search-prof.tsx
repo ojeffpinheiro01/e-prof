@@ -3,18 +3,18 @@ import { ScrollView, Text } from "react-native";
 import { TextInputMask } from "react-native-masked-text";
 import { useTheme } from "@emotion/react";
 
-import { TextInputStyled } from "../ui/components/inputs/TextInput/TextInput.style";
-import PageTitle from "../ui/components/data-display/PageTitle/PageTitle";
-import { ButtonStyled } from "../ui/components/inputs/Button/Button.style";
-import UserInformation from "../ui/components/data-display/UserInformation/UserInformation";
+import { TextInputStyled } from "ui/components/inputs/TextInput/TextInput.style";
+import PageTitle from "ui/components/data-display/PageTitle/PageTitle";
+import { ButtonStyled } from "ui/components/inputs/Button/Button.style";
+import UserInformation from "ui/components/data-display/UserInformation/UserInformation";
 import {
   ErrorText,
   FormContainer,
   ResponseContainer,
   TextContainer,
-} from "../ui/styles/pages/search-prof.styled";
-import useIndex from "../data/hooks/pages/useIndex.page";
-import useSearchProf from "../data/hooks/pages/useSearchProf.page.mobile";
+} from "ui/styles/pages/search-prof.styled";
+import useIndex from "data/hooks/pages/useIndex.page";
+import useSearchProf from "data/hooks/pages/useSearchProf.page.mobile";
 
 const Index: React.FC = () => {
   const { colors } = useTheme();
@@ -50,7 +50,7 @@ const Index: React.FC = () => {
           value={cep}
           onChangeText={setCep}
           type={"custom"}
-          options={{ mask: "99999999" }}
+          options={{ mask: "99.999-999" }}
           customTextInput={TextInputStyled}
           customTextInputProps={{ label: "Digite seu CEP" }} />
 
@@ -67,8 +67,6 @@ const Index: React.FC = () => {
           Buscar
         </ButtonStyled>
       </FormContainer>
-
-      <Text>{cep}</Text>
 
       {searchDone &&
         (profs.length > 0 ? (

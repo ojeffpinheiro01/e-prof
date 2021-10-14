@@ -1,8 +1,8 @@
 import { useMemo, useState } from "react";
 
-import { UserShortInterface } from "../../@types/UserInterface";
-import { ApiService } from "../../services/ApiService";
-import { ValidationService } from "../../services/ValidationService";
+import { UserShortInterface } from "data/@types/UserInterface";
+import { ApiService } from "data/services/ApiService";
+import { ValidationService } from "data/services/ValidationService";
 
 export default function useIndex() {
   const [cep, setCep] = useState(""),
@@ -22,12 +22,12 @@ export default function useIndex() {
 
     try {
       const { data } = await ApiService.get<{
-        diaristas: UserShortInterface[];
-        quantidade_diaristas: number;
+        profs: UserShortInterface[];
+        num_profs: number;
       }>("/api/prof/city?cep=" + cep.replace(/\D/g, ""));
 
-      setProfs(data.diaristas);
-      setRest(data.quantidade_diaristas);
+      setProfs(data.profs);
+      setRest(data.num_profs);
 
       setSearchDone(true);
       setLoading(false);
