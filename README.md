@@ -165,5 +165,5 @@ $ yarn start
 
 ---
 
->Este projeto foi desenvolvido com ❤️ por **[Jéferson Pinheiro](https://github.com/ojeffpinheiro01/)**, com os instrutores **[Akira Hanashiro](https://github.com/hanashiro)** e **[Elton Fonseca](https://github.com/elton-fonseca)** durante a **[Multi Stack](https://lp.treinaweb.com.br/multi-stack/aula1)<br> 
+>Este projeto foi desenvolvido com ❤️ por **[Jéferson Pinheiro](https://github.com/ojeffpinheiro01/)**, com os instrutores **[Akira Hanashiro](https://github.com/hanashiro)** e **[Elton Fonseca](https://github.com/elton-fonseca)** durante a **[Multi Stack](https://lp.treinaweb.com.br/multi-stack/aula1)**<br> 
 Se te ajudou, dá ⭐, vai me ajudar também 😉
