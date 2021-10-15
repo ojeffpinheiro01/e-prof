@@ -28,7 +28,7 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "Projeto desenvolvido durante a imersão MultiStack da Treina Web",
+    "description": "Esse projeto desenvolvido durante a 2ª edição da bootcamp Multi Stack, evento organizado pela Treina Web Foi pensado para conectar os alunos que estão a procura de um profissional para ajuda-lo em suas dificuldades em disciplinas escolares, para aprender a tocar um instrumento ou um novo idioma.",
     "githubUrl": "https://github.com/ojeffpinheiro01/e-prof"
   }
 }
