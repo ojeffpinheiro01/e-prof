@@ -18,7 +18,7 @@ const Home = () => {
     setCep,
     validCep,
     searchProfs,
-    err,
+    error,
     profs,
     searchDone,
     loading,
@@ -45,7 +45,7 @@ const Home = () => {
           value={cep}
           onChange={(t) => setCep(t.target.value)}
         />
-        {err && <Typography color={'error'}>{err}</Typography>}
+        {error && <Typography color={'error'}>{error}</Typography>}
 
         <Button
           variant={'contained'}

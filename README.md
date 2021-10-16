@@ -165,5 +165,5 @@ $ yarn start
 
 ---
 
->Este projeto foi desenvolvido com ❤️ por **[Jéferson Pinheiro](https://github.com/ojeffpinheiro01/)**, com o instrutor **[Nelio Alves](https://github.com/acenelio)** durante a **[Semana Spring React 04](https://devsuperior.com.br/evento-sds?episodio=1)**<br> 
+>Este projeto foi desenvolvido com ❤️ por **[Jéferson Pinheiro](https://github.com/ojeffpinheiro01/)**, com os instrutores **[Akira Hanashiro](https://github.com/hanashiro)** e **[Elton Fonseca](https://github.com/elton-fonseca)** durante a **[Semana Spring React 04](https://devsuperior.com.br/evento-sds?episodio=1)**<br> 
 Se te ajudou, dá ⭐, vai me ajudar também 😉

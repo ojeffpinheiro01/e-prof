@@ -15,7 +15,7 @@ const Stack = createStackNavigator()
 
 export type RootStackParamList = {
     Index: undefined;
-    EncontrarDiaristas: undefined;
+    SearchProfs: undefined;
 };
 
 
@@ -29,14 +29,11 @@ const Router: React.FC = () => {
                         headerTitle: () => (
                             <Image
                                 style={{ width: 150, height: 50, resizeMode: 'contain', }}
-                                source={Logo}
-                            />
-                        ),
+                                source={Logo} />
+                        )
                     }} />
                 <Stack.Screen name={'Search'} component={Search}
-                    options={{
-                        title: 'Procurar professor',
-                    }} />
+                    options={{ title: 'Procurar professor' }} />
             </Stack.Navigator>
         </NavigationContainer>
     );

@@ -8,7 +8,7 @@ export default function useIndex() {
     validCep = useMemo(() => {
       return ValidationService.cep(cep);
     }, [cep]),
-    [err, setErr] = useState(""),
+    [error, setError] = useState(""),
     [searchDone, setSearchDone] = useState(false),
     [loading, setLoading] = useState(false),
     [profs, setProfs] = useState([] as UserShortInterface[]),
@@ -17,7 +17,7 @@ export default function useIndex() {
   async function searchProfs(cep: string) {
     setLoading(true);
     setSearchDone(false);
-    setErr("");
+    setError("");
 
     try {
       const { data } = await ApiService.get<{
@@ -31,7 +31,7 @@ export default function useIndex() {
       setSearchDone(true);
       setLoading(false);
     } catch (e) {
-      setErr("CEP não encontrado");
+      setError("CEP não encontrado");
       setLoading(false);
     }
   }
@@ -41,7 +41,7 @@ export default function useIndex() {
     setCep,
     validCep,
     searchProfs,
-    err,
+    error,
     profs,
     searchDone,
     loading,
